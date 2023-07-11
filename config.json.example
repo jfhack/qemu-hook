@@ -1,0 +1,12 @@
+{
+  "vm1": {
+    "start": [
+      ["command1", "arg0", "arg1"],
+      ["command2", "arg0", "arg1"]
+    ],
+    "stopped": [
+      ["command1", "arg0", "arg1"],
+      ["command2", "arg0", "arg1"]
+    ]
+  }
+}
