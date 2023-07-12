@@ -41,3 +41,11 @@ fi
 
 echo "Installing hook"
 echo "$SCRIPT" | sudo tee "$HOOK_DIR/qemu" > /dev/null
+sudo chmod +x "$HOOK_DIR/qemu"
+echo "You may need to restart libvirt daemon"
+echo "Do you want to restart libvirt daemon now? (y/n)"
+read -e -p "Restart libvirt daemon? : " -i "y" RESTART
+if [ "$RESTART" == "y" ]
+then
+  sudo systemctl restart libvirtd
+fi
