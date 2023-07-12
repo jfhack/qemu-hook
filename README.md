@@ -1,4 +1,4 @@
-# QEMU-Hook
+# QEMU Hook
 This is a simple script that allows for the installation of a hook in QEMU for the `start` and `stopped` events
 
 The configuration file can be modified at any time. An example of what it looks like is shown below:
@@ -44,3 +44,4 @@ To install, run the following script. It will prompt you for the absolute path t
 ./install.sh
 ```
 
+You will most likely need to restart libvirtd when finished
